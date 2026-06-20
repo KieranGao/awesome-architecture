@@ -205,6 +205,12 @@ awesome-architecture/
 
 ---
 
+## 🤝 核心贡献者
+
+- [@h13181278389](https://github.com/h13181278389) —— 核心贡献者。感谢你对 Awesome Architecture 的支持、投入和持续贡献。
+
+---
+
 ## ⭐ Star 历史
 
 > 如果它帮到了你,点颗 Star 就是对它最好的鼓励。
