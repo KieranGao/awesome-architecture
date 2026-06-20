@@ -208,6 +208,7 @@ awesome-architecture/
 ## 🤝 核心贡献者
 
 - [@h13181278389](https://github.com/h13181278389) —— 核心贡献者。感谢你对 Awesome Architecture 的支持、投入和持续贡献。
+- [@flyw1015](https://github.com/flyw1015) —— 核心贡献者。感谢你对 Awesome Architecture 的支持、投入和持续贡献。
 
 ---
 

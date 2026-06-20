@@ -212,6 +212,7 @@ Jump straight to each template's "Key Decisions & Trade-offs" and "Evolution Pat
 ## 🤝 Core Contributor
 
 - [@h13181278389](https://github.com/h13181278389) — core contributor. Thank you for supporting Awesome Architecture and helping it keep improving.
+- [@flyw1015](https://github.com/flyw1015) — core contributor. Thank you for supporting Awesome Architecture and helping it keep improving.
 
 ---
 
