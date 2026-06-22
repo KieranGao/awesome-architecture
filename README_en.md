@@ -176,7 +176,7 @@ Each template is an "architecture map". We **deliberately avoid discussing langu
 
 | Template | Representative products / prototypes | Key architecture themes |
 |---|---|---|
-| [System Prompt Architecture](templates/system-prompt-architecture/README.md) | Claude Fable 5, ChatGPT, Gemini, Grok, Cursor | Layered Agent OS, decision-tree routing, externalized Skills, compliance hard rules, runtime injection |
+| [System Prompt Architecture](en/templates/system-prompt-architecture/README.md) | Claude Fable 5, ChatGPT, Gemini, Grok, Cursor | Layered Agent OS, decision-tree routing, externalized Skills, compliance hard rules, runtime injection |
 
 > 👉 **Want to add your own template?** Follow the unified format in [templates/_TEMPLATE.md](templates/_TEMPLATE.md).
 
