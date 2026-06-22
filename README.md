@@ -128,7 +128,7 @@ awesome-architecture/
 
 每一个模板都是一张「架构地图」。我们**刻意不讨论用什么语言、什么框架**,只讨论:这类系统在解决什么问题、由哪些部件组成、数据怎么流动、关键决策怎么取舍、规模化时会死在哪里。
 
-> 目前共 **25** 个模板(16 经典 / 通用 + 5 AI 原生 + 4 AI 编码 / 自治 Agent),每个都在末尾附**真实开源项目 / 工程文档链接**,可顺着去读源码。
+> 目前共 **26** 个模板(16 经典 / 通用 + 5 AI 原生 + 4 AI 编码 / 自治 Agent + 1 系统提示词架构),每个都在末尾附**真实开源项目 / 工程文档链接**,可顺着去读源码。
 
 **经典 / 通用系统:**
 
@@ -169,6 +169,12 @@ awesome-architecture/
 | [OpenAI Codex](templates/codex/README.md) | Codex CLI + Cloud | 本地 CLI 与云端异步沙箱双形态、沙箱 × 审批双轴、默认断网防注入、自动开 PR |
 | [OpenClaw(龙虾 🦞)](templates/openclaw/README.md) | OpenClaw(原 Clawdbot) | 自托管 Gateway、聊天软件即 UI、心跳 / cron、可插拔 harness、记忆即纯文本 |
 | [Hermes(爱马仕)](templates/hermes/README.md) | Hermes(Nous Research) | 常驻自我成长、FTS5 持久记忆、自动沉淀技能、cron、多渠道 / 多 provider |
+
+**📜 系统提示词架构:**
+
+| 模板 | 代表产品 / 原型 | 核心架构看点 |
+|---|---|---|
+| [系统提示词架构](templates/system-prompt-architecture/README.md) | Claude Fable 5、ChatGPT、Gemini、Grok、Cursor | 分层 Agent OS、决策树路由、Skills 外化、版权/记忆合规、运行时注入 |
 
 > 👉 **想加入自己的模板?** 套用 [templates/_TEMPLATE.md](templates/_TEMPLATE.md) 的统一格式即可。
 

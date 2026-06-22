@@ -172,9 +172,15 @@ Each template is an "architecture map". We **deliberately avoid discussing langu
 | [OpenClaw (the lobster 🦞)](templates/openclaw/README.md) | OpenClaw (formerly Clawdbot) | Self-hosted gateway; chat apps as the UI; heartbeat/cron; pluggable harness; memory as plain text |
 | [Hermes](templates/hermes/README.md) | Hermes (Nous Research) | Always-on & self-growing; FTS5 persistent memory; auto-distilled skills; cron; multi-channel/provider |
 
+**📜 System Prompt Architecture**
+
+| Template | Representative products / prototypes | Key architecture themes |
+|---|---|---|
+| [System Prompt Architecture](templates/system-prompt-architecture/README.md) | Claude Fable 5, ChatGPT, Gemini, Grok, Cursor | Layered Agent OS, decision-tree routing, externalized Skills, compliance hard rules, runtime injection |
+
 > 👉 **Want to add your own template?** Follow the unified format in [templates/_TEMPLATE.md](templates/_TEMPLATE.md).
 
-> 📝 **Now fully bilingual** — all **34 tutorial chapters, 25 templates, and the first 6 cases** are available in English. Use the language switch (top-right on the site), or browse `en/` in the repo.
+> 📝 **Now fully bilingual** — all **34 tutorial chapters, 26 templates, and the first 6 cases** are available in English. Use the language switch (top-right on the site), or browse `en/` in the repo.
 
 ---
 
