@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { useData, withBase } from 'vitepress'
 
-type Category = 'common' | 'ai' | 'agent'
+type Category = 'common' | 'ai' | 'agent' | 'prompt'
 type TabKey = 'all' | Category
 
 interface Item { name: string; icon: string; cat: Category; desc: string; link: string }
@@ -34,6 +34,7 @@ const itemsZh: Item[] = [
   { name: 'OpenAI Codex', icon: '🛰️', cat: 'agent', desc: '本地 CLI + 云端沙箱 · 异步开 PR · 双轴安全', link: '/templates/codex/README' },
   { name: 'OpenClaw(龙虾)', icon: '🦞', cat: 'agent', desc: '自托管网关 · 聊天软件即 UI · 常驻', link: '/templates/openclaw/README' },
   { name: 'Hermes(爱马仕)', icon: '🧠', cat: 'agent', desc: 'FTS5 持久记忆 · 自动沉淀技能 · 常驻', link: '/templates/hermes/README' },
+  { name: '系统提示词架构', icon: '📜', cat: 'prompt', desc: '分层 Agent OS · 决策树路由 · 合规', link: '/templates/system-prompt-architecture/README' },
 ]
 
 const itemsEn: Item[] = [
@@ -62,20 +63,23 @@ const itemsEn: Item[] = [
   { name: 'OpenAI Codex', icon: '🛰️', cat: 'agent', desc: 'Local CLI + cloud sandbox · async PRs · two-axis safety', link: '/en/templates/codex/README' },
   { name: 'OpenClaw (the lobster)', icon: '🦞', cat: 'agent', desc: 'Self-hosted gateway · chat as UI · always-on', link: '/en/templates/openclaw/README' },
   { name: 'Hermes', icon: '🧠', cat: 'agent', desc: 'FTS5 memory · auto-distilled skills · always-on', link: '/en/templates/hermes/README' },
+  { name: 'System Prompt Architecture', icon: '📜', cat: 'prompt', desc: 'Layered Agent OS · routing · compliance', link: '/en/templates/system-prompt-architecture/README' },
 ]
 
 const tabsZh: Tab[] = [
-  { k: 'all', t: '全部 25' },
+  { k: 'all', t: '全部 26' },
   { k: 'common', t: '🗺️ 经典 / 通用' },
   { k: 'ai', t: '🤖 AI 原生' },
   { k: 'agent', t: '🦾 编码 / 自治 Agent' },
+  { k: 'prompt', t: '📜 系统提示词' },
 ]
 
 const tabsEn: Tab[] = [
-  { k: 'all', t: 'All 25' },
+  { k: 'all', t: 'All 26' },
   { k: 'common', t: '🗺️ Classic / General' },
   { k: 'ai', t: '🤖 AI-native' },
   { k: 'agent', t: '🦾 Coding / Autonomous Agents' },
+  { k: 'prompt', t: '📜 System Prompts' },
 ]
 
 const { lang } = useData()
@@ -103,7 +107,7 @@ const filtered = computed(() => (filter.value === 'all' ? items.value : items.va
         <div class="ax-ic">{{ it.icon }}</div>
         <div class="ax-name">{{ it.name }}</div>
         <div class="ax-desc">{{ it.desc }}</div>
-        <span class="ax-tag" :class="it.cat">{{ it.cat === 'ai' ? 'AI' : it.cat === 'agent' ? 'Agent' : generalLabel }}</span>
+        <span class="ax-tag" :class="it.cat">{{ it.cat === 'ai' ? 'AI' : it.cat === 'agent' ? 'Agent' : it.cat === 'prompt' ? 'Prompt' : generalLabel }}</span>
       </a>
     </div>
   </div>
@@ -134,4 +138,5 @@ const filtered = computed(() => (filter.value === 'all' ? items.value : items.va
 }
 .ax-tag.ai { background: rgba(60, 135, 114, 0.16); color: var(--vp-c-brand-1); }
 .ax-tag.agent { background: rgba(200, 134, 13, 0.16); color: #b9770e; }
+.ax-tag.prompt { background: rgba(88, 101, 242, 0.16); color: #5865f2; }
 </style>

@@ -7,7 +7,7 @@
 
 ## 模板清单
 
-> 共 **25** 个模板:16 个经典 / 通用系统 + 5 个 AI 原生系统 + 4 个 AI 编码 / 自治 Agent(LLM 时代新增)。每个模板都附**真实开源项目 / 工程文档链接**(见各模板末尾「参考原型与延伸阅读」)。
+> 共 **26** 个模板:16 个经典 / 通用系统 + 5 个 AI 原生系统 + 4 个 AI 编码 / 自治 Agent + 1 个系统提示词架构(LLM 时代新增)。每个模板都附**真实开源项目 / 工程文档链接**(见各模板末尾「参考原型与延伸阅读」)。
 
 ### 经典 / 通用系统
 
@@ -48,6 +48,12 @@
 | [OpenAI Codex](codex/README.md) | Codex CLI + Cloud | 同一内核:本地实时结对 + 云端异步跑完开 PR | 双形态、沙箱 × 审批双轴、内核级隔离、默认断网 |
 | [OpenClaw(龙虾 🦞)](openclaw/README.md) | OpenClaw(原 Clawdbot/Moltbot) | 自托管常驻、把 agent 接到你在用的聊天软件 | 单进程 Gateway、消息平台即 UI、心跳 / cron、可插拔 harness |
 | [Hermes(爱马仕)](hermes/README.md) | Hermes(Nous Research) | 跟你一起成长的自托管常驻智能体 | FTS5 持久记忆、自动沉淀技能、cron、多渠道 / 多 provider |
+
+### 📜 系统提示词架构
+
+| 模板 | 代表产品 / 原型 | 一句话定位 | 核心看点 |
+|---|---|---|---|
+| [系统提示词架构](system-prompt-architecture/README.md) | Claude Fable 5、GPT-5.5、Gemini、Grok、Cursor | 把大模型包装成产品的分层 Agent OS | 六层模块、决策树路由、Skills 外化、合规硬约束、运行时注入 |
 
 ---
 
