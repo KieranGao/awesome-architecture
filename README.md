@@ -11,6 +11,8 @@
 
 **🧭 配套 skill:** [architecture-copilot](https://github.com/study8677/architecture-copilot) —— 把这套知识变成能在 Claude Code / Cursor / Codex 里**引导你一步步设计架构**的交互式 skill。
 
+**🤖 推荐项目:** [AgentCode](https://github.com/study8677/agentcode) —— 把真实开发任务和 AI PR 审查做成练习场,训练 Agent 时代真正需要的工程交付能力;项目正在 V0 打磨阶段,欢迎 PR 和 Issue 一起共建。
+
 [![zread](https://img.shields.io/badge/Ask_Zread-_.svg?style=flat&color=00b0aa&labelColor=000000&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuOTYxNTYgMS42MDAxSDIuMjQxNTZDMS44ODgxIDEuNjAwMSAxLjYwMTU2IDEuODg2NjQgMS42MDE1NiAyLjI0MDFWNC45NjAxQzEuNjAxNTYgNS4zMTM1NiAxLjg4ODEgNS42MDAxIDIuMjQxNTYgNS42MDAxSDQuOTYxNTZDNS4zMTUwMiA1LjYwMDEgNS42MDE1NiA1LjMxMzU2IDUuNjAxNTYgNC45NjAxVjIuMjQwMUM1LjYwMTU2IDEuODg2NjQgNS4zMTUwMiAxLjYwMDEgNC45NjE1NiAxLjYwMDFaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00Ljk2MTU2IDEwLjM5OTlIMi4yNDE1NkMxLjg4ODEgMTAuMzk5OSAxLjYwMTU2IDEwLjY4NjQgMS42MDE1NiAxMS4wMzk5VjEzLjc1OTlDMS42MDE1NiAxNC4xMTM0IDEuODg4MSAxNC4zOTk5IDIuMjQxNTYgMTQuMzk5OUg0Ljk2MTU2QzUuMzE1MDIgMTQuMzk5OSA1LjYwMTU2IDE0LjExMzQgNS42MDE1NiAxMy43NTk5VjExLjAzOTlDNS42MDE1NiAxMC42ODY0IDUuMzE1MDIgMTAuMzk5OSA0Ljk2MTU2IDEwLjM5OTlaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik0xMy43NTg0IDEuNjAwMUgxMS4wMzg0QzEwLjY4NSAxLjYwMDEgMTAuMzk4NCAxLjg4NjY0IDEwLjM5ODQgMi4yNDAxVjQuOTYwMUMxMC4zOTg0IDUuMzEzNTYgMTAuNjg1IDUuNjAwMSAxMS4wMzg0IDUuNjAwMUgxMy43NTg0QzE0LjExMTkgNS42MDAxIDE0LjM5ODQgNS4zMTM1NiAxNC4zOTg0IDQuOTYwMVYyLjI0MDFDMTQuMzk4NCAxLjg4NjY0IDE0LjExMTkgMS42MDAxIDEzLjc1ODQgMS42MDAxWiIgZmlsbD0iI2ZmZiIvPgo8cGF0aCBkPSJNNCAxMkwxMiA0TDQgMTJaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00IDEyTDEyIDQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K&logoColor=ffffff)](https://zread.ai/study8677/awesome-architecture)
 
 ---
@@ -104,6 +106,19 @@ awesome-architecture/
 | [32](tutorial/32-可观测性与可靠性技术栈选型.md) | 可观测性与可靠性技术栈选型 | 从 SLO 倒推指标、日志、链路、告警和事故流程 |
 | [33](tutorial/33-AI基础设施技术栈选型.md) | AI 基础设施技术栈选型 | 模型 API、RAG、向量库、推理服务、eval 何时升级 |
 | [34](tutorial/34-技术选型决策树.md) | 技术选型决策树 | 把阶段、失败模式、团队能力、退出方案串成 ADR |
+
+**🧬 AI 原生组织篇(35–40)—— 把 AI 变成组织级生产流程:**
+
+| 章节 | 主题 | 你将判断 |
+|---|---|---|
+| [35](tutorial/35-AI原生组织架构.md) | AI 原生组织架构 | 为什么“人人用 AI”不等于组织 AI 原生 |
+| [36](tutorial/36-超级个体与超级团队.md) | 超级个体与超级团队 | 人才密度、AI 杠杆和组织摩擦如何共同决定竞争力 |
+| [37](tutorial/37-共享上下文架构.md) | 共享上下文架构 | PRD、ADR、任务、trace、复盘如何成为人和 Agent 的共同事实源 |
+| [38](tutorial/38-AI工作流架构.md) | AI 工作流架构 | 个人 prompt 如何沉淀成模板、Skill、Flow 和 Golden Path |
+| [39](tutorial/39-责任与治理架构.md) | 责任与治理架构 | Owner、权限、审批、审计和激励如何防止 AI 失控 |
+| [40](tutorial/40-AI原生组织演进路线.md) | AI 原生组织演进路线 | 从 3–5 人试点走到多小队复用和组织级 AI 操作系统 |
+
+> 专题入口见 [AI 原生组织 / 流程架构专题入口](templates/ai-native-organization/README.md),它是 35–40 的阅读索引,不计入 26 个正式模板。
 
 > 👉 **新手从 [tutorial/README.md](tutorial/README.md) 开始**,那里有完整的学习路径。
 
