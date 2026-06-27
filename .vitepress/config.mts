@@ -53,6 +53,15 @@ const zhTutorialStack = [
   { text: '34 · 技术选型决策树', link: '/tutorial/34-技术选型决策树' },
 ]
 
+const zhTutorialOrg = [
+  { text: '35 · AI 原生组织架构', link: '/tutorial/35-AI原生组织架构' },
+  { text: '36 · 超级个体与超级团队', link: '/tutorial/36-超级个体与超级团队' },
+  { text: '37 · 共享上下文架构', link: '/tutorial/37-共享上下文架构' },
+  { text: '38 · AI 工作流架构', link: '/tutorial/38-AI工作流架构' },
+  { text: '39 · 责任与治理架构', link: '/tutorial/39-责任与治理架构' },
+  { text: '40 · AI 原生组织演进路线', link: '/tutorial/40-AI原生组织演进路线' },
+]
+
 const zhCases = [
   { text: '案例总览', link: '/cases/README' },
   { text: '01 · StarArena:演唱会抢票系统', link: '/cases/stararena-ticketing/README' },
@@ -113,7 +122,7 @@ const zhPrompt = [
 
 export default defineConfig({
   title: 'Awesome Architecture',
-  description: '专注「架构思维」的中英双语知识库:34 章教程 + 26 张真实系统架构地图 + 6 个端到端案例。',
+  description: '专注「架构思维」的中英双语知识库:40 章教程 + 26 张真实系统架构地图 + 6 个端到端案例。',
   lang: 'zh-Hans',
   base: process.env.GITHUB_PAGES ? '/awesome-architecture/' : '/',
   cleanUrls: true,
@@ -123,7 +132,7 @@ export default defineConfig({
   head: [
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     ['meta', { property: 'og:title', content: 'Awesome Architecture · 架构图谱' }],
-    ['meta', { property: 'og:description', content: '像架构师一样思考:34 章教程 + 26 张真实系统架构地图 + 6 个端到端案例。' }],
+    ['meta', { property: 'og:description', content: '像架构师一样思考:40 章教程 + 26 张真实系统架构地图 + 6 个端到端案例。' }],
     // 注:Hypothesis 划词标注不再全站默认加载;改由评论区顶部的 toggle 按需注入。
     // 见 .vitepress/theme/components/Comments.vue 的 loadHypothesis()。
   ],
@@ -153,6 +162,7 @@ export default defineConfig({
             { text: '🎯 实战篇', items: zhTutorialPractice },
             { text: '🤝 AI 协同篇', items: zhTutorialCollab },
             { text: '🧰 技术栈选型篇', items: zhTutorialStack },
+            { text: '🧬 AI 原生组织篇', items: zhTutorialOrg },
           ],
           '/templates/': [
             { text: '🗺️ 经典 / 通用系统', items: zhCommon },
@@ -169,6 +179,7 @@ export default defineConfig({
             { text: '🎯 教程 · 实战篇', collapsed: false, items: zhTutorialPractice },
             { text: '🤝 教程 · AI 协同篇', collapsed: false, items: zhTutorialCollab },
             { text: '🧰 教程 · 技术栈选型篇', collapsed: false, items: zhTutorialStack },
+            { text: '🧬 教程 · AI 原生组织篇', collapsed: false, items: zhTutorialOrg },
             { text: '🧪 案例篇', collapsed: false, items: zhCases },
             { text: '🗺️ 经典 / 通用系统', collapsed: true, items: zhCommon },
             { text: '🤖 AI 原生系统', collapsed: true, items: zhAI },

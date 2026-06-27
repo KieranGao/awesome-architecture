@@ -107,6 +107,19 @@ awesome-architecture/
 | [33](tutorial/33-AI基础设施技术栈选型.md) | AI 基础设施技术栈选型 | 模型 API、RAG、向量库、推理服务、eval 何时升级 |
 | [34](tutorial/34-技术选型决策树.md) | 技术选型决策树 | 把阶段、失败模式、团队能力、退出方案串成 ADR |
 
+**🧬 AI 原生组织篇(35–40)—— 把 AI 变成组织级生产流程:**
+
+| 章节 | 主题 | 你将判断 |
+|---|---|---|
+| [35](tutorial/35-AI原生组织架构.md) | AI 原生组织架构 | 为什么“人人用 AI”不等于组织 AI 原生 |
+| [36](tutorial/36-超级个体与超级团队.md) | 超级个体与超级团队 | 人才密度、AI 杠杆和组织摩擦如何共同决定竞争力 |
+| [37](tutorial/37-共享上下文架构.md) | 共享上下文架构 | PRD、ADR、任务、trace、复盘如何成为人和 Agent 的共同事实源 |
+| [38](tutorial/38-AI工作流架构.md) | AI 工作流架构 | 个人 prompt 如何沉淀成模板、Skill、Flow 和 Golden Path |
+| [39](tutorial/39-责任与治理架构.md) | 责任与治理架构 | Owner、权限、审批、审计和激励如何防止 AI 失控 |
+| [40](tutorial/40-AI原生组织演进路线.md) | AI 原生组织演进路线 | 从 3–5 人试点走到多小队复用和组织级 AI 操作系统 |
+
+> 专题入口见 [AI 原生组织 / 流程架构专题入口](templates/ai-native-organization/README.md),它是 35–40 的阅读索引,不计入 26 个正式模板。
+
 > 👉 **新手从 [tutorial/README.md](tutorial/README.md) 开始**,那里有完整的学习路径。
 
 ### 🧪 cases/ —— 把架构从答案写成推理过程
