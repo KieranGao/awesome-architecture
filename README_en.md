@@ -138,41 +138,51 @@ Each template is an "architecture map". We **deliberately avoid discussing langu
 
 | Template | Representative products | Key architecture themes |
 |---|---|---|
-| [AI Chat Product](templates/ai-chat-product/README.md) | Claude, ChatGPT | LLM inference, streaming, context management, RAG, cost control |
-| [Browser Extension](templates/browser-extension/README.md) | Honey, Grammarly | Content/background split, page injection, privacy boundaries, monetization |
-| [Standard Web App](templates/standard-web-app/README.md) | Corporate sites, blogs, SaaS dashboards | Classic three-tier, caching, read/write splitting — "good enough" |
-| [Mobile App](templates/mobile-app/README.md) | Most iOS/Android apps | Offline-first, data sync, client state, push |
-| [E-commerce Platform](templates/ecommerce-platform/README.md) | Amazon, Shopify, Taobao | Inventory, orders, payments, overselling, traffic spikes |
-| [Social Feed](templates/social-feed/README.md) | Twitter/X, Instagram | Feed push/pull, follow graph, viral fan-out |
-| [Video Streaming](templates/video-streaming/README.md) | Netflix, YouTube | Transcoding, CDN, adaptive bitrate, recommendations |
-| [Realtime Chat](templates/realtime-chat/README.md) | WhatsApp, Slack, WeChat | Long-lived connections, message ordering, offline delivery, group fan-out |
-| [URL Shortener](templates/url-shortener/README.md) | Bitly, TinyURL, t.co | Read-heavy, caching, 301/302, distributed unique IDs |
-| [Payment System](templates/payment-system/README.md) | Stripe, Alipay, PayPal | Idempotency, double-entry ledger, reconciliation, state machine |
-| [Search Engine](templates/search-engine/README.md) | Google, Elasticsearch | Inverted index, relevance ranking, recall + rerank, sharding |
-| [Ride-Hailing](templates/ride-hailing/README.md) | Uber, Lyft, DiDi | Geospatial index, real-time location, supply–demand matching |
-| [Collaborative Doc](templates/collaborative-doc/README.md) | Google Docs, Figma | OT/CRDT, single-writer serialization, operation log |
-| [Cloud Storage](templates/cloud-storage/README.md) | Dropbox, iCloud | Chunking, content-addressed dedup, incremental sync |
-| [Notification System](templates/notification-system/README.md) | Novu, FCM/APNs | Multi-channel fan-out, dedup/throttling, async retry |
-| [Online Ticketing](templates/online-ticketing/README.md) | Ticketmaster, 12306 | Virtual waiting room, atomic stock decrement, seat-lock TTL |
+| [AI Chat Product](en/templates/ai-chat-product/README.md) | Claude, ChatGPT | LLM inference, streaming, context management, RAG, cost control |
+| [Browser Extension](en/templates/browser-extension/README.md) | Honey, Grammarly | Content/background split, page injection, privacy boundaries, monetization |
+| [Standard Web App](en/templates/standard-web-app/README.md) | Corporate sites, blogs, SaaS dashboards | Classic three-tier, caching, read/write splitting — "good enough" |
+| [Mobile App](en/templates/mobile-app/README.md) | Most iOS/Android apps | Offline-first, data sync, client state, push |
+| [E-commerce Platform](en/templates/ecommerce-platform/README.md) | Amazon, Shopify, Taobao | Inventory, orders, payments, overselling, traffic spikes |
+| [Social Feed](en/templates/social-feed/README.md) | Twitter/X, Instagram | Feed push/pull, follow graph, viral fan-out |
+| [Video Streaming](en/templates/video-streaming/README.md) | Netflix, YouTube | Transcoding, CDN, adaptive bitrate, recommendations |
+| [Realtime Chat](en/templates/realtime-chat/README.md) | WhatsApp, Slack, WeChat | Long-lived connections, message ordering, offline delivery, group fan-out |
+| [URL Shortener](en/templates/url-shortener/README.md) | Bitly, TinyURL, t.co | Read-heavy, caching, 301/302, distributed unique IDs |
+| [Payment System](en/templates/payment-system/README.md) | Stripe, Alipay, PayPal | Idempotency, double-entry ledger, reconciliation, state machine |
+| [Search Engine](en/templates/search-engine/README.md) | Google, Elasticsearch | Inverted index, relevance ranking, recall + rerank, sharding |
+| [Ride-Hailing](en/templates/ride-hailing/README.md) | Uber, Lyft, DiDi | Geospatial index, real-time location, supply–demand matching |
+| [Collaborative Doc](en/templates/collaborative-doc/README.md) | Google Docs, Figma | OT/CRDT, single-writer serialization, operation log |
+| [Cloud Storage](en/templates/cloud-storage/README.md) | Dropbox, iCloud | Chunking, content-addressed dedup, incremental sync |
+| [Notification System](en/templates/notification-system/README.md) | Novu, FCM/APNs | Multi-channel fan-out, dedup/throttling, async retry |
+| [Online Ticketing](en/templates/online-ticketing/README.md) | Ticketmaster, 12306 | Virtual waiting room, atomic stock decrement, seat-lock TTL |
 
 **🤖 AI-native systems** (new)
 
 | Template | Representative products / prototypes | Key architecture themes |
 |---|---|---|
-| [AI Gateway / Relay](templates/ai-gateway/README.md) | One API, LiteLLM, Portkey | Unified API, billing & rate-limit, load balancing, caching |
-| [RAG Knowledge Base](templates/rag-knowledge-base/README.md) | RAGFlow, LlamaIndex, Dify | Chunking, vector retrieval, hybrid search + rerank, citations |
-| [AI Agent / Workflow](templates/ai-agent-platform/README.md) | Dify, Coze, LangGraph | Action loop, tool sandbox, memory, guardrails |
-| [Inference Serving](templates/inference-serving/README.md) | vLLM, SGLang, Triton | Continuous batching, paged KV cache, quantization |
-| [Vector Database](templates/vector-database/README.md) | Milvus, Qdrant, pgvector | ANN, HNSW/IVF, recall–latency trade-off |
+| [AI Gateway / Relay](en/templates/ai-gateway/README.md) | One API, LiteLLM, Portkey | Unified API, billing & rate-limit, load balancing, caching |
+| [RAG Knowledge Base](en/templates/rag-knowledge-base/README.md) | RAGFlow, LlamaIndex, Dify | Chunking, vector retrieval, hybrid search + rerank, citations |
+| [AI Agent / Workflow](en/templates/ai-agent-platform/README.md) | Dify, Coze, LangGraph | Action loop, tool sandbox, memory, guardrails |
+| [Inference Serving](en/templates/inference-serving/README.md) | vLLM, SGLang, Triton | Continuous batching, paged KV cache, quantization |
+| [Vector Database](en/templates/vector-database/README.md) | Milvus, Qdrant, pgvector | ANN, HNSW/IVF, recall–latency trade-off |
 
 **🦾 AI Coding & Autonomous Agents** (new — real, in-the-wild agent product architectures)
 
 | Template | Representative products / prototypes | Key architecture themes |
 |---|---|---|
-| [Claude Code](templates/claude-code/README.md) | Claude Code (Anthropic) | Local-first coding agent; subagents/hooks/skills/MCP; two-tier permissions + OS sandbox; context compaction |
-| [OpenAI Codex](templates/codex/README.md) | Codex CLI + Cloud | Local CLI & cloud async sandbox; sandbox × approval axes; offline-by-default anti-injection; opens PRs |
-| [OpenClaw (the lobster 🦞)](templates/openclaw/README.md) | OpenClaw (formerly Clawdbot) | Self-hosted gateway; chat apps as the UI; heartbeat/cron; pluggable harness; memory as plain text |
-| [Hermes](templates/hermes/README.md) | Hermes (Nous Research) | Always-on & self-growing; FTS5 persistent memory; auto-distilled skills; cron; multi-channel/provider |
+| [Claude Code](en/templates/claude-code/README.md) | Claude Code (Anthropic) | Local-first coding agent; subagents/hooks/skills/MCP; two-tier permissions + OS sandbox; context compaction |
+| [OpenAI Codex](en/templates/codex/README.md) | Codex CLI + Cloud | Local CLI & cloud async sandbox; sandbox × approval axes; offline-by-default anti-injection; opens PRs |
+| [OpenClaw (the lobster 🦞)](en/templates/openclaw/README.md) | OpenClaw (formerly Clawdbot) | Self-hosted gateway; chat apps as the UI; heartbeat/cron; pluggable harness; memory as plain text |
+| [Hermes](en/templates/hermes/README.md) | Hermes (Nous Research) | Always-on & self-growing; FTS5 persistent memory; auto-distilled skills; cron; multi-channel/provider |
+
+**🏭 Industrial / Embedded systems** (new — where software bugs become physical-world consequences)
+
+| Template | Representative products / prototypes | Key architecture themes |
+|---|---|---|
+| [Embedded Device Firmware](en/templates/embedded-device/README.md) | Smart locks, wearables; Zephyr, FreeRTOS | HAL layering, state machines, watchdog, A/B dual-bank OTA |
+| [IoT Device Platform](en/templates/iot-platform/README.md) | AWS IoT Core, Tuya; ThingsBoard, EMQX | Millions of long-lived connections, per-device identity, device shadow, staged OTA |
+| [Industrial Edge / SCADA](en/templates/industrial-edge/README.md) | Factory data acquisition; EdgeX, OPC UA | Protocol normalization, edge autonomy, OT/IT isolation (Purdue), gated reverse control |
+| [Automotive E/E](en/templates/automotive-ee/README.md) | Tesla-style central compute; openpilot, AUTOSAR | ASIL isolation, CAN + automotive Ethernet, whole-vehicle OTA, shadow mode |
+| [Robotics System](en/templates/robotics/README.md) | Vacuums, AGVs, drones; ROS 2, PX4 | Sense→plan→act frequency layering, independent safety loop, record & replay, fleet ops |
 
 **📜 System Prompt Architecture**
 
@@ -182,7 +192,7 @@ Each template is an "architecture map". We **deliberately avoid discussing langu
 
 > 👉 **Want to add your own template?** Follow the unified format in [templates/_TEMPLATE.md](templates/_TEMPLATE.md).
 
-> 📝 **Now fully bilingual** — all **34 tutorial chapters, 26 templates, and the first 6 cases** are available in English. Use the language switch (top-right on the site), or browse `en/` in the repo.
+> 📝 **Now fully bilingual** — all **34 tutorial chapters, 31 templates, and the first 6 cases** are available in English. Use the language switch (top-right on the site), or browse `en/` in the repo.
 
 ---
 

@@ -120,9 +120,17 @@ const zhPrompt = [
   { text: '系统提示词架构', link: '/templates/system-prompt-architecture/README' },
 ]
 
+const zhIndustrial = [
+  { text: '嵌入式设备固件', link: '/templates/embedded-device/README' },
+  { text: 'IoT 设备接入平台', link: '/templates/iot-platform/README' },
+  { text: '工业边缘网关 / SCADA', link: '/templates/industrial-edge/README' },
+  { text: '车载电子电气(E/E)', link: '/templates/automotive-ee/README' },
+  { text: '机器人系统', link: '/templates/robotics/README' },
+]
+
 export default defineConfig({
   title: 'Awesome Architecture',
-  description: '专注「架构思维」的中英双语知识库:40 章教程 + 26 张真实系统架构地图 + 6 个端到端案例。',
+  description: '专注「架构思维」的中英双语知识库:40 章教程 + 31 张真实系统架构地图 + 6 个端到端案例。',
   lang: 'zh-Hans',
   base: process.env.GITHUB_PAGES ? '/awesome-architecture/' : '/',
   cleanUrls: true,
@@ -132,7 +140,7 @@ export default defineConfig({
   head: [
     ['meta', { name: 'theme-color', content: '#3c8772' }],
     ['meta', { property: 'og:title', content: 'Awesome Architecture · 架构图谱' }],
-    ['meta', { property: 'og:description', content: '像架构师一样思考:40 章教程 + 26 张真实系统架构地图 + 6 个端到端案例。' }],
+    ['meta', { property: 'og:description', content: '像架构师一样思考:40 章教程 + 31 张真实系统架构地图 + 6 个端到端案例。' }],
     // 注:Hypothesis 划词标注不再全站默认加载;改由评论区顶部的 toggle 按需注入。
     // 见 .vitepress/theme/components/Comments.vue 的 loadHypothesis()。
   ],
@@ -169,6 +177,7 @@ export default defineConfig({
             { text: '🤖 AI 原生系统', items: zhAI },
             { text: '🦾 AI 编码 / 自治 Agent', items: zhAgent },
             { text: '📜 系统提示词架构', items: zhPrompt },
+            { text: '🏭 工业 / 嵌入式', items: zhIndustrial },
           ],
           '/cases/': [
             { text: '🧪 案例篇', items: zhCases },
@@ -185,6 +194,7 @@ export default defineConfig({
             { text: '🤖 AI 原生系统', collapsed: true, items: zhAI },
             { text: '🦾 AI 编码 / 自治 Agent', collapsed: true, items: zhAgent },
             { text: '📜 系统提示词架构', collapsed: true, items: zhPrompt },
+            { text: '🏭 工业 / 嵌入式', collapsed: true, items: zhIndustrial },
           ],
         },
         outline: { label: '本页大纲', level: [2, 3] },
@@ -332,6 +342,17 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: 'System Prompt Architecture', link: '/en/templates/system-prompt-architecture/README' },
+              ],
+            },
+            {
+              text: '🏭 Templates · Industrial / Embedded',
+              collapsed: true,
+              items: [
+                { text: 'Embedded Device Firmware', link: '/en/templates/embedded-device/README' },
+                { text: 'IoT Device Platform', link: '/en/templates/iot-platform/README' },
+                { text: 'Industrial Edge / SCADA', link: '/en/templates/industrial-edge/README' },
+                { text: 'Automotive E/E', link: '/en/templates/automotive-ee/README' },
+                { text: 'Robotics System', link: '/en/templates/robotics/README' },
               ],
             },
           ],

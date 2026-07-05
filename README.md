@@ -145,7 +145,7 @@ awesome-architecture/
 
 每一个模板都是一张「架构地图」。我们**刻意不讨论用什么语言、什么框架**,只讨论:这类系统在解决什么问题、由哪些部件组成、数据怎么流动、关键决策怎么取舍、规模化时会死在哪里。
 
-> 目前共 **26** 个模板(16 经典 / 通用 + 5 AI 原生 + 4 AI 编码 / 自治 Agent + 1 系统提示词架构),每个都在末尾附**真实开源项目 / 工程文档链接**,可顺着去读源码。
+> 目前共 **31** 个模板(16 经典 / 通用 + 5 AI 原生 + 4 AI 编码 / 自治 Agent + 1 系统提示词架构 + 5 工业 / 嵌入式),每个都在末尾附**真实开源项目 / 工程文档链接**,可顺着去读源码。
 
 **经典 / 通用系统:**
 
@@ -192,6 +192,16 @@ awesome-architecture/
 | 模板 | 代表产品 / 原型 | 核心架构看点 |
 |---|---|---|
 | [系统提示词架构](templates/system-prompt-architecture/README.md) | Claude Fable 5、ChatGPT、Gemini、Grok、Cursor | 分层 Agent OS、决策树路由、Skills 外化、版权/记忆合规、运行时注入 |
+
+**🏭 工业 / 嵌入式系统(2026 新增,软件的错误会变成物理世界的后果):**
+
+| 模板 | 代表产品 / 原型 | 核心架构看点 |
+|---|---|---|
+| [嵌入式设备固件](templates/embedded-device/README.md) | 智能门锁、手环;Zephyr、FreeRTOS | HAL 分层、状态机、看门狗、A/B 双分区 OTA 防变砖 |
+| [IoT 设备接入平台](templates/iot-platform/README.md) | AWS IoT Core、涂鸦;ThingsBoard、EMQX | 百万长连接、一机一密、设备影子、灰度 OTA |
+| [工业边缘网关 / SCADA](templates/industrial-edge/README.md) | 工厂数采;EdgeX、OPC UA | 协议归一、边缘自治、OT/IT 隔离(Purdue)、受控反向控制 |
+| [车载电子电气(E/E)](templates/automotive-ee/README.md) | 特斯拉、域控;openpilot、AUTOSAR | ASIL 安全隔离、CAN + 车载以太网两张网、整车 OTA、影子模式 |
+| [机器人系统](templates/robotics/README.md) | 扫地机、AGV、无人机;ROS 2、PX4 | 感知→规划→控制频率分层、独立安全旁路、录制回放、车队管理 |
 
 > 👉 **想加入自己的模板?** 套用 [templates/_TEMPLATE.md](templates/_TEMPLATE.md) 的统一格式即可。
 

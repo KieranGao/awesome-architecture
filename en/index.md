@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Awesome Architecture"
   text: "Think like an architect"
-  tagline: "Writing code is disappearing; judgment is what's getting valuable. 34 architecture-thinking chapters + 26 real-system architecture maps + 6 end-to-end cases — architecture only, no syntax."
+  tagline: "Writing code is disappearing; judgment is what's getting valuable. 34 architecture-thinking chapters + 31 real-system architecture maps + 6 end-to-end cases — architecture only, no syntax."
   actions:
     - theme: brand
       text: Start the tutorial →
@@ -24,7 +24,7 @@ features:
     title: Judgment, not syntax
     details: No language or framework lock-in. A transferable way of thinking — requirements → constraints → quality attributes → trade-offs — now applied to technology stack selection.
   - icon: 🗺️
-    title: 26 architecture maps
+    title: 31 architecture maps
     details: From e-commerce, social feeds, chat and video to AI gateways, RAG and inference serving — each explains why it's built that way and where it breaks.
   - icon: 🧪
     title: 6 end-to-end cases
@@ -37,9 +37,9 @@ features:
     details: Each template links to real open-source projects and engineering papers (vLLM, LiteLLM, TigerBeetle, Uber H3, Figma…).
 ---
 
-> ✅ **Fully bilingual.** All 34 tutorial chapters, 26 templates, and the first 6 cases are available in English — use the language switch (top-right) or browse `en/` in the repo. [Contributions welcome](https://github.com/study8677/awesome-architecture).
+> ✅ **Fully bilingual.** All 34 tutorial chapters, 31 templates, and the first 6 cases are available in English — use the language switch (top-right) or browse `en/` in the repo. [Contributions welcome](https://github.com/study8677/awesome-architecture).
 
-## 🗺️ Browse all 26 architecture maps
+## 🗺️ Browse all 31 architecture maps
 
 Click a category to filter, then click any card to jump to that template's architecture map.
 
@@ -77,4 +77,4 @@ Before diving in, check your gut sense of 'architecture':
   explanation="Architecture = the decisions that, once made, are hard to change, affect the whole system, and decide whether it is *good*. Diagrams are how decisions get expressed; the *why* behind decisions is the soul."
 />
 
-Ready? 👉 [Start from Chapter 01](/en/tutorial/01-为什么先有架构思维), or browse [26 architecture maps](https://github.com/study8677/awesome-architecture/tree/main/en/templates) on GitHub.
+Ready? 👉 [Start from Chapter 01](/en/tutorial/01-为什么先有架构思维), or browse [31 architecture maps](https://github.com/study8677/awesome-architecture/tree/main/en/templates) on GitHub.

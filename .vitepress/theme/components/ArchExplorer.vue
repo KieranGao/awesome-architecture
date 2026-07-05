@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { useData, withBase } from 'vitepress'
 
-type Category = 'common' | 'ai' | 'agent' | 'prompt'
+type Category = 'common' | 'ai' | 'agent' | 'prompt' | 'industrial'
 type TabKey = 'all' | Category
 
 interface Item { name: string; icon: string; cat: Category; desc: string; link: string }
@@ -35,6 +35,11 @@ const itemsZh: Item[] = [
   { name: 'OpenClaw(龙虾)', icon: '🦞', cat: 'agent', desc: '自托管网关 · 聊天软件即 UI · 常驻', link: '/templates/openclaw/README' },
   { name: 'Hermes(爱马仕)', icon: '🧠', cat: 'agent', desc: 'FTS5 持久记忆 · 自动沉淀技能 · 常驻', link: '/templates/hermes/README' },
   { name: '系统提示词架构', icon: '📜', cat: 'prompt', desc: '分层 Agent OS · 决策树路由 · 合规', link: '/templates/system-prompt-architecture/README' },
+  { name: '嵌入式设备固件', icon: '🔩', cat: 'industrial', desc: 'HAL 分层 · 状态机 · A/B OTA 防变砖', link: '/templates/embedded-device/README' },
+  { name: 'IoT 设备接入平台', icon: '📡', cat: 'industrial', desc: '百万长连接 · 设备影子 · 灰度 OTA', link: '/templates/iot-platform/README' },
+  { name: '工业边缘 / SCADA', icon: '🏭', cat: 'industrial', desc: '协议归一 · 边缘自治 · OT/IT 隔离', link: '/templates/industrial-edge/README' },
+  { name: '车载电子电气(E/E)', icon: '🚙', cat: 'industrial', desc: 'ASIL 隔离 · 两张网 · 整车 OTA', link: '/templates/automotive-ee/README' },
+  { name: '机器人系统', icon: '🦾', cat: 'industrial', desc: '频率分层 · 安全旁路 · 录制回放', link: '/templates/robotics/README' },
 ]
 
 const itemsEn: Item[] = [
@@ -64,22 +69,29 @@ const itemsEn: Item[] = [
   { name: 'OpenClaw (the lobster)', icon: '🦞', cat: 'agent', desc: 'Self-hosted gateway · chat as UI · always-on', link: '/en/templates/openclaw/README' },
   { name: 'Hermes', icon: '🧠', cat: 'agent', desc: 'FTS5 memory · auto-distilled skills · always-on', link: '/en/templates/hermes/README' },
   { name: 'System Prompt Architecture', icon: '📜', cat: 'prompt', desc: 'Layered Agent OS · routing · compliance', link: '/en/templates/system-prompt-architecture/README' },
+  { name: 'Embedded Device Firmware', icon: '🔩', cat: 'industrial', desc: 'HAL layering · state machines · A/B OTA', link: '/en/templates/embedded-device/README' },
+  { name: 'IoT Device Platform', icon: '📡', cat: 'industrial', desc: 'Massive connections · device shadow · staged OTA', link: '/en/templates/iot-platform/README' },
+  { name: 'Industrial Edge / SCADA', icon: '🏭', cat: 'industrial', desc: 'Protocol normalization · edge autonomy · OT/IT isolation', link: '/en/templates/industrial-edge/README' },
+  { name: 'Automotive E/E', icon: '🚙', cat: 'industrial', desc: 'ASIL isolation · two networks · vehicle OTA', link: '/en/templates/automotive-ee/README' },
+  { name: 'Robotics System', icon: '🦾', cat: 'industrial', desc: 'Frequency layering · safety loop · record & replay', link: '/en/templates/robotics/README' },
 ]
 
 const tabsZh: Tab[] = [
-  { k: 'all', t: '全部 26' },
+  { k: 'all', t: '全部 31' },
   { k: 'common', t: '🗺️ 经典 / 通用' },
   { k: 'ai', t: '🤖 AI 原生' },
   { k: 'agent', t: '🦾 编码 / 自治 Agent' },
   { k: 'prompt', t: '📜 系统提示词' },
+  { k: 'industrial', t: '🏭 工业 / 嵌入式' },
 ]
 
 const tabsEn: Tab[] = [
-  { k: 'all', t: 'All 26' },
+  { k: 'all', t: 'All 31' },
   { k: 'common', t: '🗺️ Classic / General' },
   { k: 'ai', t: '🤖 AI-native' },
   { k: 'agent', t: '🦾 Coding / Autonomous Agents' },
   { k: 'prompt', t: '📜 System Prompts' },
+  { k: 'industrial', t: '🏭 Industrial / Embedded' },
 ]
 
 const { lang } = useData()
@@ -107,7 +119,7 @@ const filtered = computed(() => (filter.value === 'all' ? items.value : items.va
         <div class="ax-ic">{{ it.icon }}</div>
         <div class="ax-name">{{ it.name }}</div>
         <div class="ax-desc">{{ it.desc }}</div>
-        <span class="ax-tag" :class="it.cat">{{ it.cat === 'ai' ? 'AI' : it.cat === 'agent' ? 'Agent' : it.cat === 'prompt' ? 'Prompt' : generalLabel }}</span>
+        <span class="ax-tag" :class="it.cat">{{ it.cat === 'ai' ? 'AI' : it.cat === 'agent' ? 'Agent' : it.cat === 'prompt' ? 'Prompt' : it.cat === 'industrial' ? (isEn ? 'Industrial' : '工业') : generalLabel }}</span>
       </a>
     </div>
   </div>
@@ -139,4 +151,5 @@ const filtered = computed(() => (filter.value === 'all' ? items.value : items.va
 .ax-tag.ai { background: rgba(60, 135, 114, 0.16); color: var(--vp-c-brand-1); }
 .ax-tag.agent { background: rgba(200, 134, 13, 0.16); color: #b9770e; }
 .ax-tag.prompt { background: rgba(88, 101, 242, 0.16); color: #5865f2; }
+.ax-tag.industrial { background: rgba(96, 108, 220, 0.14); color: #5b6bce; }
 </style>
