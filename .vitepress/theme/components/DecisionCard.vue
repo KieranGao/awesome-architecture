@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useData } from 'vitepress'
+import { computed, ref } from 'vue'
 
 defineProps<{
   title: string
@@ -11,6 +12,13 @@ defineProps<{
 }>()
 
 const show = ref(false)
+const { lang } = useData()
+
+const isEn = computed(() => lang.value?.startsWith('en'))
+const toggleLabel = computed(() => {
+  if (show.value) return isEn.value ? 'Collapse ▲' : '收起 ▲'
+  return isEn.value ? '👉 What would an architect usually choose? ▼' : '👉 架构师通常怎么选?▼'
+})
 </script>
 
 <template>
@@ -27,8 +35,8 @@ const show = ref(false)
         <div class="dc-d">{{ bDesc }}</div>
       </div>
     </div>
-    <button class="dc-btn" @click="show = !show">
-      {{ show ? '收起 ▲' : '👉 架构师通常怎么选?▼' }}
+    <button type="button" class="dc-btn" :aria-expanded="show" @click="show = !show">
+      {{ toggleLabel }}
     </button>
     <div v-if="show" class="dc-verdict">{{ verdict }}</div>
   </div>
