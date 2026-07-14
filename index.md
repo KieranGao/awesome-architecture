@@ -10,7 +10,7 @@ hero:
       text: 开始学习 →
       link: /tutorial/README
     - theme: alt
-      text: 浏览 26 个架构模板
+      text: 浏览 31 个架构模板
       link: /templates/README
     - theme: alt
       text: 阅读 6 个案例
@@ -37,7 +37,7 @@ features:
     details: 末尾附真实开源项目与工程博客 / 论文链接(vLLM、LiteLLM、TigerBeetle、Uber H3、Figma…),可顺藤摸瓜读源码。
 ---
 
-## 🗺️ 浏览全部 26 个架构模板
+## 🗺️ 浏览全部 31 个架构模板
 
 点下方分类筛选,点任意卡片直达对应模板的「架构地图」。
 

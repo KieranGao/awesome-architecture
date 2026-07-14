@@ -120,7 +120,7 @@ awesome-architecture/
 | [39](tutorial/39-责任与治理架构.md) | 责任与治理架构 | Owner、权限、审批、审计和激励如何防止 AI 失控 |
 | [40](tutorial/40-AI原生组织演进路线.md) | AI 原生组织演进路线 | 从 3–5 人试点走到多小队复用和组织级 AI 操作系统 |
 
-> 专题入口见 [AI 原生组织 / 流程架构专题入口](templates/ai-native-organization/README.md),它是 35–40 的阅读索引,不计入 26 个正式模板。
+> 专题入口见 [AI 原生组织 / 流程架构专题入口](templates/ai-native-organization/README.md),它是 35–40 的阅读索引,不计入 31 个正式模板。
 
 > 👉 **新手从 [tutorial/README.md](tutorial/README.md) 开始**,那里有完整的学习路径。
 
