@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Awesome Architecture"
   text: "Think like an architect"
-  tagline: "Writing code is disappearing; judgment is what's getting valuable. 34 architecture-thinking chapters + 31 real-system architecture maps + 6 end-to-end cases — architecture only, no syntax."
+  tagline: "Writing code is disappearing; judgment is what's getting valuable. 40 architecture-thinking chapters (34 translated to English) + 31 real-system architecture maps + 6 end-to-end cases — architecture only, no syntax."
   actions:
     - theme: brand
       text: Start the tutorial →
@@ -37,7 +37,7 @@ features:
     details: Each template links to real open-source projects and engineering papers (vLLM, LiteLLM, TigerBeetle, Uber H3, Figma…).
 ---
 
-> ✅ **Fully bilingual.** All 34 tutorial chapters, 31 templates, and the first 6 cases are available in English — use the language switch (top-right) or browse `en/` in the repo. [Contributions welcome](https://github.com/study8677/awesome-architecture).
+> ✅ **Fully bilingual.** 34 of 40 tutorial chapters, all 31 templates, and the first 6 cases are available in English — use the language switch (top-right) or browse `en/` in the repo. [Contributions welcome](https://github.com/study8677/awesome-architecture).
 
 ## 🗺️ Browse all 31 architecture maps
 
